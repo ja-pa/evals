@@ -1,0 +1,9 @@
+test-match-cot:
+  id: test-match-cot.s1.simple-v0
+  description: Example eval that checks sampled text matches the expected output.
+  disclaimer: This is an example disclaimer.
+  metrics: [accuracy]
+test-match-cot.s1.simple-v0:
+  class: evals.elsuite.modelgraded.classify:ModelBasedClassify
+  args:
+    samples_jsonl: test_match/samples.jsonl
